@@ -1,0 +1,1 @@
+web: gunicorn bangin_burgers.wsgi
