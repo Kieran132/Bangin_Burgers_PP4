@@ -30,7 +30,6 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['https://bangin-burgers-pp4.herokuapp.com/', 'localhost']
-CSRF_TRUSTED_ORIGINS = ['http://*', 'https://*']
 
 
 # Application definition
