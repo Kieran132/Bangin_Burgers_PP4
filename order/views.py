@@ -5,7 +5,6 @@ from .models import FoodItem
 
 class FoodList(generic.ListView):
     model = FoodItem
-    queryset = FoodItem
+    queryset = FoodItem.objects
     template_name = 'order.html'
     paginate_by = 6
-
