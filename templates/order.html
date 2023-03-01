@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>Our Menu</h1>
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="row">
+                {% for food in fooditem_list %}
+                <div class="card">
+                    <div class="image-container">
+                        {% if "placeholder" in fooditem.image.url%}
+                        <img src="#" class="card-img-top" alt="...">
+                        {% else %}
+                        <img class="card-img-top" src=" {{fooditem.image.url}}">
+                        {% endif %}
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ fooditem.name }}</h5>
+                        <p class="card-text">{{ fooditem.description }}</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endblock %}
