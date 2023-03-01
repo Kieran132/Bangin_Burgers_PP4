@@ -10,10 +10,3 @@ class FoodList(generic.ListView):
     paginate_by = 6
 
 
-class FoodList(generic.ListView):
-    model = FoodTest
-    queryset = FoodTest.objects.all()
-    template_name = 'order.html'
-    paginate_by = 6
-
-

@@ -10,13 +10,3 @@ class FoodAdmin(SummernoteModelAdmin):
     search_fields = ['name', 'description']
     prepopulated_fields = {'slug': ('name', )}
     summernote_fields = ('description')
-
-
-@admin.register(FoodTest)
-class Testing(SummernoteModelAdmin):
-
-    list_display = ('name', 'slug')
-    search_fields = ['name', 'description']
-    prepopulated_fields = {'slug': ('name', )}
-    summernote_fields = ('description')
-
