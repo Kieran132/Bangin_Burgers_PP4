@@ -8,9 +8,9 @@
 
             <div class="card-body">
                 <p>before loop</p>
-                {% for object in object_list %}
+                {% for food in fooditem_list %}
                 <p>in loop</p>
-                <h5 class="card-title">{{ object.name }}</h5>
+                <h5 class="card-title">{{ food.name }}</h5>
                 {% endfor %}
             </div>
 

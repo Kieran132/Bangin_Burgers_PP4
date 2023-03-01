@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
-from .models import FoodItem, FoodTest
+from .models import FoodItem
 
 
 class FoodList(generic.ListView):

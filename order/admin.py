@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import FoodItem, FoodTest
+from .models import FoodItem
 from django_summernote.admin import SummernoteModelAdmin
 
 
