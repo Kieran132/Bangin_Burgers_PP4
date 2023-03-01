@@ -5,12 +5,16 @@
     <h1>Our Menu</h1>
     <div class="row">
         <div class="col-sm-6 col-md-4">
-            <div class="row">
-                <div class="card-body">
-                    {% for food in fooditem %}
-                    <h5 class="card-title">{{ fooditem.name }}</h5>
-                    {% endfor %}
-                </div>
+
+            <div class="card-body">
+                <p>before loop</p>
+                {% for object in object_list %}
+                <p>in loop</p>
+                <h5 class="card-title">{{ object.name }}</h5>
+                {% endfor %}
             </div>
+
         </div>
-        {% endblock content %}
+    </div>
+</div>
+{% endblock %}
