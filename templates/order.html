@@ -2,20 +2,19 @@
 
 {% block content %}
 <div class="container">
-    <h1>Our Menu</h1>
+    <h1 class="order-title">Our Menu</h1>
     <div class="row">
-        <div class="col-sm-6 col-md-4">
-            <div class="card-body">
+        <div class="grid-container">
+            <div class="grid-item">
                 {% for food in fooditem_list %}
-                <h5 class="card-title">{{ food.name }}</h5>
-                <h6>{{food.description}}</h6>
-                <h6>£{{food.price}}</h6>
+                <h5 class="grid-title">{{ food.name }}</h5>
                 <div class="imgae-container">
                     <img class="card-img-top" src="{{ food.image.url }}" alt="{{ food.name }} image">
                 </div>
+                <h6 class="grid-description">{{food.description | striptags}}</h6>
+                <h6 class="grid-price">£{{food.price}}</h6>
                 {% endfor %}
             </div>
-
         </div>
     </div>
 </div>

@@ -53,6 +53,13 @@ body{
     color: blueviolet !important;
 }
 
+.order-title{
+    font-size: 50px;
+    font-family: MuseoModerno, sans-serif;
+    justify-content: center;
+    display: flex;
+}
+
 /* Navigation styling */
 
 .nav-item{
@@ -64,3 +71,11 @@ body{
 .navbar-light .navbar-nav .nav-link{
     color: blueviolet;
 }
+
+/* Ordering Page Styling */
+
+.grid-container{
+    columns: 3;
+}
+
+  
