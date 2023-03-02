@@ -37,8 +37,30 @@ body{
 
 /* Title Styling */
 
-.navbar-brand {
+.navbar-light .nav-title {
     font-family: MuseoModerno, sans-serif;
     font-size: 50px;
-    margin-left: 520px;
+    justify-content: center;
+    color: blueviolet;
+    display: flex;
+}
+
+.nav-order-title{
+    font-family: MuseoModerno, sans-serif;
+    font-size: 30px;
+    justify-content: left;
+    display: flex;
+    color: blueviolet !important;
+}
+
+/* Navigation styling */
+
+.nav-item{
+    justify-content: space-between;
+    font-size: 20px;
+    margin-left: 4.8rem;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: blueviolet;
 }
