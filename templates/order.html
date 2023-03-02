@@ -4,6 +4,7 @@
 <div class="container">
     <h1 class="order-title">Our Menu</h1>
     <div class="row">
+        <h3 class="order-main-items">Mains</h3>
         <div class="grid-container">
             <div class="grid-item">
                 {% for food in fooditem_list %}
@@ -14,6 +15,32 @@
                 <h6 class="grid-description">{{food.description | striptags}}</h6>
                 <h6 class="grid-price">£{{food.price}}</h6>
                 {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h3 class="order-main-items">Sides</h3>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h5 class="grid-title"></h5>
+                <div class="imgae-container">
+                    <img class="card-img-top" src="" alt="">
+                </div>
+                <h6 class="grid-description"></h6>
+                <h6 class="grid-price"></h6>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h3 class="order-main-items">Drinks</h3>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h5 class="grid-title"></h5>
+                <div class="imgae-container">
+                    <img class="card-img-top" src="" alt="">
+                </div>
+                <h6 class="grid-description"></h6>
+                <h6 class="grid-price"></h6>
             </div>
         </div>
     </div>

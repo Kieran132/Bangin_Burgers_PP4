@@ -53,11 +53,13 @@ body{
     color: blueviolet !important;
 }
 
-.order-title{
+.order-title {
     font-size: 50px;
     font-family: MuseoModerno, sans-serif;
     justify-content: center;
     display: flex;
+    color: blueviolet;
+    text-decoration: underline 2px black;
 }
 
 /* Navigation styling */
@@ -73,6 +75,13 @@ body{
 }
 
 /* Ordering Page Styling */
+
+.order-main-items{
+    display: flex;
+    font-family: MuseoModerno, sans-serif;
+    font-size: 30px;
+    margin-left: 4rem;
+}
 
 .grid-container{
     columns: 3;
