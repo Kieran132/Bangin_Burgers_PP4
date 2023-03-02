@@ -5,12 +5,14 @@
     <h1>Our Menu</h1>
     <div class="row">
         <div class="col-sm-6 col-md-4">
-
             <div class="card-body">
-                <p>before loop</p>
                 {% for food in fooditem_list %}
-                <p>in loop</p>
                 <h5 class="card-title">{{ food.name }}</h5>
+                <h6>{{food.description}}</h6>
+                <h6>£{{food.price}}</h6>
+                <div class="imgae-container">
+                    <img class="card-img-top" src="{{ food.image.url }}" alt="{{ food.name }} image">
+                </div>
                 {% endfor %}
             </div>
 

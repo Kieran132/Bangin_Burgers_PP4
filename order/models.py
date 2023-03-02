@@ -10,7 +10,7 @@ class FoodItem(models.Model):
     slug = models.SlugField(max_length=200)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    image = models.ImageField(upload_to='food_images/', blank=True, null=True)
+    image = CloudinaryField('image', default='placeholder')
     likes = models.ManyToManyField(User, related_name='food_likes', blank=True)
 
     def __str__(self):
