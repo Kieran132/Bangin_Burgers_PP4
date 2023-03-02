@@ -10,3 +10,5 @@ class FoodList(generic.ListView):
     paginate_by = 6
 
 
+def index(request):
+    return render(request, 'index.html')
