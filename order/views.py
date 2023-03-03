@@ -10,19 +10,5 @@ class FoodList(generic.ListView):
     paginate_by = 6
 
 
-class SideList(generic.ListView):
-    model = SideItem
-    queryset = SideItem.objects.all()
-    template_name = 'order.html'
-    paginate_by = 6
-
-
-class DrinkList(generic.ListView):
-    model = DrinkItem
-    queryset = DrinkItem.objects.all()
-    template_name = 'order.html'
-    paginate_by = 6
-
-
 def index(request):
     return render(request, 'index.html')

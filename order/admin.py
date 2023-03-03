@@ -13,7 +13,7 @@ class FoodAdmin(SummernoteModelAdmin):
 
 
 @admin.register(SideItem)
-class FoodAdmin(SummernoteModelAdmin):
+class SideAdmin(SummernoteModelAdmin):
 
     list_display = ('name', 'slug')
     search_fields = ['name', 'description']
@@ -22,7 +22,7 @@ class FoodAdmin(SummernoteModelAdmin):
 
 
 @admin.register(DrinkItem)
-class FoodAdmin(SummernoteModelAdmin):
+class DrinkAdmin(SummernoteModelAdmin):
 
     list_display = ('name', 'slug')
     search_fields = ['name', 'description']
