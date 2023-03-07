@@ -7,7 +7,7 @@
         <h3 class="order-main-items">Mains</h3>
         <div class="grid-container">
             <div class="grid-item">
-                {% for food in fooditem_list %}
+                {% for food in foods %}
                 <h5 class="grid-title">{{ food.name }}</h5>
                 <div class="imgae-container">
                     <img class="card-img-top" src="{{ food.image.url }}" alt="{{ food.name }} image">
@@ -22,7 +22,7 @@
         <h3 class="order-main-items">Sides</h3>
         <div class="grid-container">
             <div class="grid-item">
-                {% for side in sideitem_list %}
+                {% for side in foodlist_list %}
                 <h5 class="grid-title">{{ side.name }}</h5>
                 <div class="imgae-container">
                     <img class="card-img-top" src="{{ side.image.url }}" alt="{{ side.name }} image">
@@ -37,7 +37,7 @@
         <h3 class="order-main-items">Drinks</h3>
         <div class="grid-container">
             <div class="grid-item">
-                {% for drink in drinkitem_list %}
+                {% for drink in context_list %}
                 <h5 class="grid-title">{{ drink.name }}</h5>
                 <div class="imgae-container">
                     <img class="card-img-top" src="{{ drink.image.url }}" alt="{{ drink.name }} image">
