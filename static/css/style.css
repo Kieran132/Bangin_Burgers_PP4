@@ -96,4 +96,9 @@ body{
     columns: 3;
 }
 
+.image-container {
+    max-height: 100%;
+    width: auto;
+}
+
   
