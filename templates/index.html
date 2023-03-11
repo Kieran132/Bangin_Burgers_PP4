@@ -16,7 +16,7 @@
         <div class="col-sm-12 d-flex flex-column justify-content-center align-items-center home-nav-button">
             <button class="btn btn-primary home-nav" href="order.html">Order</button>
             <button class="btn btn-primary home-nav">Contact</button>
-            <button class="btn btn-primary home-nav" href="{% url 'account_signup' %}">Sign Up</button>
+            <button class="btn btn-primary home-nav" action="{% url 'account_signup' %}" href="{% url 'account_signup' %}">Sign Up</button>
           </div>
         </div>
       </div>

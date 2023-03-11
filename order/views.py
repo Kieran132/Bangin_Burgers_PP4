@@ -19,3 +19,7 @@ class FoodList(View):
 
 def index(request):
     return render(request, 'index.html')
+
+
+def signup(request):
+    return render(request, 'templates/account/signup.html')
