@@ -7,4 +7,5 @@ from order.views import FoodList
 urlpatterns = [
     path('order/', FoodList.as_view(), name='order'),
     path('', views.index, name='index'),
+    path('contact/', views.contact, name='contact')
 ]
