@@ -7,13 +7,13 @@
         <h3 class="order-main-items">Drinks</h3>
         <div class="grid-container">
             <div class="grid-item">
-                {% for drink in drinks %}
-                <h5 class="grid-title">{{ drink.name }}</h5>
+                {% for drinks in drink %}
+                <h5 class="grid-title">{{ drinks.name }}</h5>
                 <div class="imaghe-container">
-                    <img class="card-img-top" src="{{ drink.image.url }}" alt="{{ drink.name }} image">
+                    <img class="card-img-top" src="{{ drinks.image.url }}" alt="{{ drinks.name }} image">
                 </div>
-                <h6 class="grid-description">{{drink.description | striptags}}</h6>
-                <h6 class="grid-price">£{{drink.price}}</h6>
+                <h6 class="grid-description">{{drinks.description | striptags}}</h6>
+                <h6 class="grid-price">£{{drinks.price}}</h6>
                 <i class="fas fa-shopping-cart"></i> 
                 {% endfor %}
             </div>

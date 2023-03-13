@@ -9,5 +9,6 @@ urlpatterns = [
     path('drinks/', DrinkList.as_view(), name='drink'),
     path('sides/', SideList.as_view(), name='side'),
     path('', views.index, name='index'),
-    path('contact/', views.contact, name='contact')
+    path('contact/', views.contact, name='contact'),
+    path('cart/', views.cart, name='cart')
 ]
