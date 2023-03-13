@@ -7,14 +7,28 @@ from django.views.generic import View
 class FoodList(View):
     def get(self, request, *args, **kwargs):
         foods = FoodItem.objects.all()
-        drinks = DrinkItem.objects.all()
-        sides = SideItem.objects.all()
         context = {
             'foods': foods,
-            'drinks': drinks,
-            'sides': sides,
         }
         return render(request, 'order.html', context)
+
+
+class SideList(View):
+    def get(self, request, *args, **kwargs):
+        sides = SideItem.objects.all()
+        context = {
+            'sides': sides,
+        }
+        return render(request, 'sides.html', context)
+
+
+class DrinkList(View):
+    def get(self, request, *args, **kwargs):
+        drink = DrinkItem.objects.all()
+        context = {
+            'drink': drink,
+        }
+        return render(request, 'drinks.html', context)
 
 
 def index(request):
