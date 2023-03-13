@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'django_summernote',
     'order',
+    'cart',
 ]
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
